@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab - Kafa Dağıtma Merkezi</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e1b4b);
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 550px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #38bdf8;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+        }
+
+        .btn-secondary {
+            background: #334155;
+            box-shadow: 0 4px 12px rgba(51, 65, 85, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Kafa Dağıtma Zamanı! ☕</h1>
+        <p>Ne yapmak istersin? LAB USB Center releases sayfasına mı göz atalım, yoksa Pokémon oynayıp biraz rahatlayalım mı?</p>
+        
+        <div class="btn-group">
+            <a href="https://github.com/barislabfun/LAB-USB-center/releases" target="_blank" class="btn">🚀 LAB USB Center Releases'e Git</a>
+            <button class="btn btn-secondary" onclick="playPokemon()">🎮 Pokémon Oynayalım!</button>
+        </div>
+    </div>
+
+    <script>
+        function playPokemon() {
+            alert("Harika seçim! Hadi konsolları veya emülatörü açıp Pokémon dünyasına dalalım! ⚡🔥");
+        }
+    </script>
+
+</body>
+</html>
